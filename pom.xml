@@ -3,14 +3,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven.apache.org/xsd-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>in.saitejabandaru</groupId>
-    <artifactId>llm-proof-credit-risk</artifactId>
+    <groupId>io.fintechai.compliance</groupId>
+    <artifactId>llm-credit-risk</artifactId>
     <version>0.2.0</version>
     <packaging>jar</packaging>
 
-    <name>llm-proof-credit-risk</name>
+    <name>llm-credit-risk</name>
     <description>Enterprise credit scoring fairness compliance auditor for Spring Boot AI banking systems. Measures demographic bias on lending decisions.</description>
-    <url>https://github.com/saitejabandaru-in/llm-proof-java</url>
+    <url>https://github.com/saitejabandaru-in/llm-credit-risk</url>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -52,7 +52,7 @@
         <repository>
             <id>github</id>
             <name>GitHub Packages</name>
-            <url>https://maven.pkg.github.com/saitejabandaru-in/llm-proof-java</url>
+            <url>https://maven.pkg.github.com/saitejabandaru-in/llm-credit-risk</url>
         </repository>
     </distributionManagement>
 </project>

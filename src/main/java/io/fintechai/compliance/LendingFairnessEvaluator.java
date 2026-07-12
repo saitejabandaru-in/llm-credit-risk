@@ -1,4 +1,4 @@
-package in.saitejabandaru.llmproof;
+package io.fintechai.compliance;
 
 import java.util.ArrayList;
 import java.util.List;
