@@ -4,12 +4,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>in.saitejabandaru</groupId>
-    <artifactId>llm-proof-java</artifactId>
-    <version>0.1.0</version>
+    <artifactId>llm-proof-credit-risk</artifactId>
+    <version>0.2.0</version>
     <packaging>jar</packaging>
 
-    <name>llm-proof-java</name>
-    <description>Wald's Sequential Probability Ratio Testing (SPRT) statistical evaluator for LLM and AI agent comparison in Java.</description>
+    <name>llm-proof-credit-risk</name>
+    <description>Enterprise credit scoring fairness compliance auditor for Spring Boot AI banking systems. Measures demographic bias on lending decisions.</description>
     <url>https://github.com/saitejabandaru-in/llm-proof-java</url>
 
     <properties>
@@ -19,7 +19,6 @@
     </properties>
 
     <dependencies>
-        <!-- JUnit Jupiter (JUnit 5) for testing -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>

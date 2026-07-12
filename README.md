@@ -1,31 +1,30 @@
-# 📊 llm-proof-java
+# 📊 llm-proof-credit-risk (Java/Maven)
 
 <p align="center">
   <img src="https://img.shields.io/badge/java-17%2B-blue.svg?style=flat-square&logo=openjdk" alt="Java Version" />
   <img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square" alt="License" />
 </p>
 
-`llm-proof-java` is a fast Wald's Sequential Probability Ratio Testing (SPRT) statistical evaluator for LLM and AI agent comparison in Java. It lets you statistically compare LLM responses in enterprise Java and Spring Boot applications and stop testing early as soon as mathematical significance is reached, saving up to 50%+ in token evaluation costs.
+`llm-proof-credit-risk` is an enterprise credit scoring fairness compliance auditor for Spring Boot AI banking systems. It calculates Demographic Parity Ratio (DPR) and Equal Opportunity Difference (EOD) on lending decisions to ensure compliance with fair lending acts.
 
 ---
 
 ## 🚀 Quick Start (Java)
 
 ```java
-import in.saitejabandaru.llmproof.SprtEvaluator;
+import in.saitejabandaru.llmproof.LendingFairnessEvaluator;
 
-// Configure evaluator (alpha = 5%, beta = 10%)
-SprtEvaluator evaluator = new SprtEvaluator(0.05, 0.10, 0.50, 0.70);
+LendingFairnessEvaluator evaluator = new LendingFairnessEvaluator();
 
-// Record outcomes (true for preferred model win, false otherwise)
-evaluator.addSample(true);
-evaluator.addSample(true);
+// Record applications: id, isPrivileged, isApproved, isDefaulted
+evaluator.recordApplication(new LendingFairnessEvaluator.LoanApplication("app-1", true, true, false));
+evaluator.recordApplication(new LendingFairnessEvaluator.LoanApplication("app-2", false, false, true));
 
-SprtEvaluator.Decision decision = evaluator.addSample(true);
+double dpr = evaluator.calculateDemographicParityRatio();
+double eod = evaluator.calculateEqualOpportunityDifference();
 
-if (decision == SprtDecision.Decision.ACCEPT_H1) {
-    System.out.println("Alternative model is statistically superior. Stop testing early!");
-}
+System.out.println("Demographic Parity Ratio: " + dpr);
+System.out.println("Equal Opportunity Difference: " + eod);
 ```
 
 ---
